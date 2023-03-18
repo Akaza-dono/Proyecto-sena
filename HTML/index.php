@@ -16,7 +16,18 @@
 
         $nuevoSaldo = $saldoAnterior + $abono;
 
-        echo $nombre. "su saldo en la cuenta es: ". $nuevoSaldo;
+        // echo $nombre. " su saldo en la cuenta es: ". $nuevoSaldo;
+
+        $nota1 = 4;
+        $nota2 = 5;
+        $nota3 = 1;
+        $totalNota = ($nota1 + $nota2 + $nota3) / 3;
+
+        if($totalNota > 3){
+            echo $nombre." Su promedio es ".$totalNota." Usted pasa";
+        }else{
+            echo $nombre." Su promedio es ".$totalNota." Usted no pasa";
+        }
     ?>
 </body>
 </html>
